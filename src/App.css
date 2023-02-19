@@ -1,0 +1,72 @@
+
+.boxContainer {
+  cursor: pointer;
+  width: 90%;
+  height: 80%;
+  background-color: rgb(231, 227, 227);
+  border-radius:10px;
+  align-self: center;
+  justify-self: center;
+}
+.App {
+  height: 60%;
+  width: min(95%,700px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:20px;
+  background-color: white;
+  border-radius: 15px;
+  padding: 3px;
+ 
+}
+.gameCanvas {
+  width: 100%;
+  height: 50%;
+  display: grid;
+  grid-template-columns: repeat(5,minmax(50px,120px));
+  grid-template-rows: repeat(2,minmax(50px,120px));
+  row-gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: auto 0;
+
+}
+.buttonsContainer{
+  height: 30%;
+  display: flex;
+  gap: 10%;
+} 
+.boxContainer {
+  margin-inline:auto;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.boxValue{
+  font-size: 2rem;
+  font-weight: bold;
+}
+.rollButton,
+.resetButton {
+  outline:0;
+  border:0;
+  height: 60px;
+  width: 120px;
+  font-size:1.25rem;
+  background-color: rgb(230, 142, 35);
+  color: white;
+  border-radius:8px;
+  cursor: pointer;
+}
+.boxClicked {
+  background-color: rgb(250, 192, 121);
+  color: white;
+}
+
+@media screen and (max-width: 675px) {
+  .App {
+    height: 400px;
+  }
+}
